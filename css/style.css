@@ -1,0 +1,99 @@
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navegação lateral */
+
+header {
+    background-color: #e24891;
+
+    height: 841px;
+
+}
+
+header nav ul {
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+.nav-item p{
+    width: 100%;
+    padding: 15px;
+}
+
+.nav-item p:hover{
+    background-color: rgba(255, 255, 255, 0.148);
+}
+
+/* Main */
+
+
+img.vertical-banner {
+    margin-left: 1350px;
+    width: 15%;
+}
+
+/* Login */
+
+.form-login{
+    width: 500px;
+    margin: auto;
+    margin-top: 150px;
+    background-color: #e24890dc;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.btn{
+    background-color: aliceblue;
+    margin-top: 15px;
+    background-color: rgb(40, 118, 227) ;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color:#145dd1;
+    color: white;
+}
+
+/* Cadastro */
+
+.form-cadastro{
+    width: 950px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #e24890dc;
+    padding: 20px;
+    border-radius: 30px;
+}
+.btn-cadastro{
+    margin-top: 15px;
+    background-color: rgb(40, 118, 227) ;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn-cadastro:hover{
+    background-color:#145dd1;
+    color: white;
+}
+
+.cadastro p{
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
