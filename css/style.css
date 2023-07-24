@@ -7,6 +7,9 @@
 }
 
 /* Navegação lateral */
+body{
+    background-color: #145dd11e;
+}
 
 header {
     background-color: #e24891;
@@ -97,3 +100,5 @@ img.vertical-banner {
     font-weight: 600;
     font-size: 20px;
 }
+
+/*#e24890dc*/
