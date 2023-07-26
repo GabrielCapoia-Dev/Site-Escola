@@ -77,11 +77,10 @@ img.vertical-banner {
     width: 950px;
     margin: auto;
     background-color: #cd60ff3a;
-    padding: 20px;
+    padding: 45px 20px;
     
 }
 .btn-cadastro{
-    margin-top: 15px;
     background-color: rgb(40, 118, 227) ;
     color: white;
     text-transform: uppercase;
@@ -94,7 +93,6 @@ img.vertical-banner {
 
 .cadastro p{
     text-align: center;
-    padding-top: 10px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 20px;

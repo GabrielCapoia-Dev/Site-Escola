@@ -27,12 +27,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script src="js/scripts.js" defer></script>
+    <script src="js/script.js" defer></script>
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/b4671e8568.js" crossorigin="anonymous"></script>
 
-    <!--Progress Bar-->
-    <script src="js/progressbar.min.js"></script>
 
     <!--Parallax-->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
@@ -41,7 +39,6 @@
 </head>
 
 
-<body>
 
     <div class="row justify-content-md-center">
 
@@ -114,13 +111,16 @@
                             <label for="inputAddress2" class="form-label">Telefone.</label>
                             <input type="number" class="form-control" placeholder="">
                         </div>
-                        <div class="col-md-2">
-                            <label for="inputState" class="form-label">Dia.</label>
-                            <select id="inputState" id="option-day" onclick="Data_Nascimento()" class="form-select">
-                                <option></option>
 
+                        <!--Select Dia-->
+                        <div class="col-md-2" >
+                            <label for="inputState" class="form-label">Dia.</label>
+                            <select id="option-day" onclick="For_Dia()" class="form-select">
                             </select>
+                            
                         </div>
+
+                        <!--Select Mes-->
                         <div class="col-md-2">
                             <label for="inputState" class="form-label">Mes.</label>
                             <select id="inputState" class="form-select">
@@ -138,18 +138,16 @@
                                 <option class="meses">Dezembro</option>
                             </select>
                         </div>
+                        <!--Select Ano-->
                         <div class="col-md-2">
                             <label for="inputState" class="form-label">Ano.</label>
-                            <select id="inputState" class="form-select">
-
-                                <option id="option-year"></option>
-
+                            <select id="option-year" onclick="For_Ano()" class="form-select">
                             </select>
                         </div>
 
                         <div class="col-6">
                             <label for="inputAddress2" class="form-label">Endereço.</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                            <input type="text" class="form-control" placeholder="">
                         </div>
                         <div class="col-md-4">
                             <label for="inputState" class="form-label">Sexo.</label>
@@ -183,6 +181,16 @@
                             <input type="email" class="form-control" id="inputAddress2" placeholder="">
                         </div>
 
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">Curso desejado.</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Ingles</option>
+                                <option>Espanhol</option>
+                                <option>Frances</option>
+                                <option>Alemao</option>
+                            </select>
+                        </div>
+
                         <div class="col-12">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -191,13 +199,14 @@
                                 </label>
                             </div>
                         </div>
+                        
                         <div class="col-12">
                             <label for="inputAddress2" class="form-label"></label>
                             <input type="text" class="form-control" id="inputAddress2"
                                 placeholder="Descrição do cliente">
                         </div>
                         <div class="col-12 ">
-                            <button type="submit" class="btn btn-cadastro">Cadastrar</button>
+                            <button type="button" onclick="Validar()" class="btn btn-cadastro">Cadastrar</button>
                         </div>
                     </form>
 
